@@ -1,0 +1,29 @@
+<%= form_for(@nfcobject) do |f| %>
+  <% if @nfcobject.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nfcobject.errors.count, "error") %> prohibited this nfcobject from being saved:</h2>
+
+      <ul>
+      <% @nfcobject.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :nfctype %><br />
+    <%= f.text_field :nfctype %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

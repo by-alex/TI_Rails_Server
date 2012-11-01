@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @nfcobject.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @nfcobject.description %>
+</p>
+
+<p>
+  <b>Nfctype:</b>
+  <%= @nfcobject.nfctype %>
+</p>
+
+
+<%= link_to 'Edit', edit_nfcobject_path(@nfcobject) %> |
+<%= link_to 'Back', nfcobjects_path %>

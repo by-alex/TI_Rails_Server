@@ -1,0 +1,27 @@
+<h1>Listing nfcobjects</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Nfctype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nfcobjects.each do |nfcobject| %>
+  <tr>
+    <td><%= nfcobject.name %></td>
+    <td><%= nfcobject.description %></td>
+    <td><%= nfcobject.nfctype %></td>
+    <td><%= link_to 'Show', nfcobject %></td>
+    <td><%= link_to 'Edit', edit_nfcobject_path(nfcobject) %></td>
+    <td><%= link_to 'Destroy', nfcobject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nfcobject', new_nfcobject_path %>
