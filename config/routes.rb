@@ -1,7 +1,7 @@
 TIServer::Application.routes.draw do
   resources :nfcobjectattributes
 
-  get "nfcobjects/:name"  => 'nfcobjects#show'
+
 
   resources :nfcobjects
   
