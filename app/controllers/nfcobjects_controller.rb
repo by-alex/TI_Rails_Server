@@ -13,7 +13,7 @@ class NfcobjectsController < ApplicationController
   # GET /nfcobjects/1
   # GET /nfcobjects/1.json
   def show
-    @nfcobject = Nfcobject.find(params[:id])
+    @nfcobject = Nfcobject.find(params[:name])
 	@attributes = @nfcobject.nfcobjectattributes
 	
     respond_to do |format|

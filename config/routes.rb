@@ -2,6 +2,8 @@ TIServer::Application.routes.draw do
   resources :nfcobjectattributes
 
   resources :nfcobjects
+  
+  match 'nfcobjects/show/:name' => 'nfcobjects#show', :member => { :show => :get }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
