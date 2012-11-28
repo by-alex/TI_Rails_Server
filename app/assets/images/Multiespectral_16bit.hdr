@@ -1,0 +1,13 @@
+ENVI
+description = {
+  Imagen Multiespectral de 16 bits, 256 X 256}
+samples = 256
+lines   = 256
+bands   = 4
+header offset = 0
+file type = ENVI Standard
+data type = 12
+interleave = bsq
+sensor type = QuickBird
+byte order = 0
+wavelength units = MUL

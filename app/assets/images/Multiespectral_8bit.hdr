@@ -1,0 +1,13 @@
+ENVI
+description = {
+  Imagen Multiespectral de 8 bits, 512 X 512}
+samples = 512
+lines   = 512
+bands   = 4
+header offset = 0
+file type = ENVI Standard
+data type = 1
+interleave = bsq
+sensor type = Landsat
+byte order = 0
+wavelength units = TM1,2,3,4
